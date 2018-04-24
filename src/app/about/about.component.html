@@ -1,0 +1,14 @@
+<div class="container">
+<p>
+  This is what I'm all about.
+  <a [routerLink]="back" class="font-weight-bold text-white" (click)="GoBack()">Take me back</a>
+</p>
+</div>
+
+<div class="container content bg-primary">
+  <ul>
+    <li class="life-container" *ngFor="let goal of goals">
+      {{goal}}
+    </li>
+  </ul>
+</div>
